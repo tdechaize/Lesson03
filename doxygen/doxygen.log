@@ -1,0 +1,3 @@
+C:/src/OpenGL/NeHe_Lesson03-master/Lesson03.c:156: warning: argument 'nothing' of command @param is not found in the argument list of DrawGLScene(GLvoid)
+C:/src/OpenGL/NeHe_Lesson03-master/Lesson03.c:137: warning: argument 'nothing' of command @param is not found in the argument list of InitGL(GLvoid)
+C:/src/OpenGL/NeHe_Lesson03-master/Lesson03.c:188: warning: argument 'nothing' of command @param is not found in the argument list of KillGLWindow(GLvoid)

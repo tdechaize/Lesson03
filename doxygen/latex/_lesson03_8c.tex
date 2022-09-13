@@ -1,0 +1,89 @@
+\hypertarget{_lesson03_8c}{}\section{RÃ©fÃ©rence du fichier C\+:/src/\+Open\+G\+L/\+Lesson03/\+Lesson03.c}
+\label{_lesson03_8c}\index{C\+:/src/\+Open\+G\+L/\+Lesson03/\+Lesson03.\+c@{C\+:/src/\+Open\+G\+L/\+Lesson03/\+Lesson03.\+c}}
+
+
+Ouvre une simple fenêtre Windows et dessine deux formes avec Open\+G\+L \+: un triangle et un carré.  
+
+
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}gl.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}glu.\+h$>$}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_lesson03_8c_a9135ea2a0d6fce68ba3b858226a31a4f}{}L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K {\bfseries Wnd\+Proc} (H\+W\+N\+D, U\+I\+N\+T, W\+P\+A\+R\+A\+M, L\+P\+A\+R\+A\+M)\label{_lesson03_8c_a9135ea2a0d6fce68ba3b858226a31a4f}
+
+\item 
+\hypertarget{_lesson03_8c_a87bb84d489df61ed7b0c002584fd984f}{}G\+Lvoid {\bfseries Re\+Size\+G\+L\+Scene} (G\+Lsizei width, G\+Lsizei height)\label{_lesson03_8c_a87bb84d489df61ed7b0c002584fd984f}
+
+\item 
+\hypertarget{_lesson03_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}{}int {\bfseries Init\+G\+L} (G\+Lvoid)\label{_lesson03_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}
+
+\item 
+\hypertarget{_lesson03_8c_a52061247bdaeb770e3a1d59eefaad972}{}int {\bfseries Draw\+G\+L\+Scene} (G\+Lvoid)\label{_lesson03_8c_a52061247bdaeb770e3a1d59eefaad972}
+
+\item 
+\hypertarget{_lesson03_8c_af33a2273205c1491be5916d3091658e0}{}G\+Lvoid {\bfseries Kill\+G\+L\+Window} (G\+Lvoid)\label{_lesson03_8c_af33a2273205c1491be5916d3091658e0}
+
+\item 
+\hypertarget{_lesson03_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}{}B\+O\+O\+L {\bfseries Create\+G\+L\+Window} (char $\ast$title, int width, int height, int bits, B\+O\+O\+L fullscreenflag)\label{_lesson03_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}
+
+\item 
+\hypertarget{_lesson03_8c_a661c2abc03926acfaeb93b4ae7db4943}{}int W\+I\+N\+A\+P\+I {\bfseries Win\+Main} (H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, int n\+Cmd\+Show)\label{_lesson03_8c_a661c2abc03926acfaeb93b4ae7db4943}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_lesson03_8c_a78f6446a0e13adc7b7b2f239112ac785}{}H\+D\+C {\bfseries h\+D\+C} =N\+U\+L\+L\label{_lesson03_8c_a78f6446a0e13adc7b7b2f239112ac785}
+
+\item 
+\hypertarget{_lesson03_8c_a874963259c7cd998acfe6e187fbdb4c1}{}H\+G\+L\+R\+C {\bfseries h\+R\+C} =N\+U\+L\+L\label{_lesson03_8c_a874963259c7cd998acfe6e187fbdb4c1}
+
+\item 
+\hypertarget{_lesson03_8c_afec4341c234519e145bac6f0e5edaa51}{}H\+W\+N\+D {\bfseries h\+Wnd} =N\+U\+L\+L\label{_lesson03_8c_afec4341c234519e145bac6f0e5edaa51}
+
+\item 
+\hypertarget{_lesson03_8c_a74029128723095e7bf00a71d46af8b24}{}H\+I\+N\+S\+T\+A\+N\+C\+E {\bfseries h\+Instance}\label{_lesson03_8c_a74029128723095e7bf00a71d46af8b24}
+
+\item 
+\hypertarget{_lesson03_8c_a55a8351b704275ad12988864918abb2a}{}B\+O\+O\+L {\bfseries keys} \mbox{[}256\mbox{]}\label{_lesson03_8c_a55a8351b704275ad12988864918abb2a}
+
+\item 
+\hypertarget{_lesson03_8c_a22389371583c4b8843e06da43399d6d9}{}B\+O\+O\+L {\bfseries active} =T\+R\+U\+E\label{_lesson03_8c_a22389371583c4b8843e06da43399d6d9}
+
+\item 
+\hypertarget{_lesson03_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}{}B\+O\+O\+L {\bfseries fullscreen} =T\+R\+U\+E\label{_lesson03_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Description dÃ©taillÃ©e}
+Ouvre une simple fenêtre Windows et dessine deux formes avec Open\+G\+L \+: un triangle et un carré. 
+
+Comments manageable by Doxygen
+
+Modified smoothly by Thierry D\+E\+C\+H\+A\+I\+Z\+E
+
+Paradigm \+: obtain one source (only one !) compatible for multiple free C Compilers and provide for all users an development environment on Windows (64 bits compatible), the great Code\+::\+Blocks manager (version 12.\+11), and don\textquotesingle{}t use glaux.\+lib or glaux.\+dll.
+
+a) Mingw 32 and 64 bits \+: downloadable \href{http://sourceforge.net/projects/mingw/}{\tt http\+://sourceforge.\+net/projects/mingw/} b) Mingw 32 D\+E\+V-\/\+C\+P\+P \+: included in old Dev-\/\+Cpp \href{http://sourceforge.net/projects/devcpp/}{\tt http\+://sourceforge.\+net/projects/devcpp/} c) Mingw 32 C\+B \+: included in package Code\+::\+Blocks (version 12.\+11) \href{http://sourceforge.net/projects/codeblocks/files/Binaries/12.11/Windows/}{\tt http\+://sourceforge.\+net/projects/codeblocks/files/\+Binaries/12.\+11/\+Windows/} d) Borland C \+: downloadable \href{http://edn.embarcadero.com/article/20633}{\tt http\+://edn.\+embarcadero.\+com/article/20633} e) Digital Mars Compiler C \+: version 8.\+57 downloadable \href{http://www.digitalmars.com}{\tt http\+://www.\+digitalmars.\+com} f) Open\+Watcom \+: version 1.\+9 downloadable \href{http://openwatcom.mirror.fr/}{\tt http\+://openwatcom.\+mirror.\+fr/} Version 2.\+0 64bits seems very buggy !!! g) Lcc and Lcc64 \+: downloadable \href{http://www.cs.virginia.edu/~lcc-win32/}{\tt http\+://www.\+cs.\+virginia.\+edu/$\sim$lcc-\/win32/} h) Cygwin \+: downloadable \href{http://www.cygwin.com/install.html}{\tt http\+://www.\+cygwin.\+com/install.\+html} (setup.\+exe) i) Visual Studio 2005 + 64bits\+: express edition for free (my version 2005 is full not express) \href{http://www.microsoft.com/france/visual-studio/essayez/express.aspx}{\tt http\+://www.\+microsoft.\+com/france/visual-\/studio/essayez/express.\+aspx} j) T\+D\+M G\+C\+C 64 bits \+: downloadable on \href{http://sourceforge.net/projects/TDM-GCC}{\tt http\+://sourceforge.\+net/projects/\+T\+D\+M-\/\+G\+C\+C}
+
+Important remark \+: All install in C partition, \char`\"{}no space\char`\"{} and \char`\"{}no special characters\char`\"{} in the name of directories (it\textquotesingle{}s reason to not install in C\+: Files (x86) ... by default proposed on windows 64 bits)
+
+Add resource file end resource header for restitute version + icon Open\+G\+L.\+ico for fun because versionning is important, same for freeware \+:-\/) !
+
+Date \+: 2015/11/14
+
+\begin{DoxyAuthor}{Auteur}
+Jeff Molofee ( Ne\+He ) originely, Modified for L\+C\+C\+Win32 compiler by Robert Wishlaw 2002/11/23 
+
+After adapted by Thierry Dechaize to verify paradigm \+: one source for multiple C Compilers 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14 novembre 2015
+\end{DoxyDate}
+Ce programme ne gére que deux événements \+: le clic sur le bouton \char`\"{}\+Fermé\char`\"{} de la fenêtre ou la sortie par la touche E\+S\+C. 
