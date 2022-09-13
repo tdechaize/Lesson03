@@ -39,8 +39,8 @@ LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MAINFRAME           ICON    DISCARDABLE     "res\\opengl.ico"
-IDI_MYICON 				ICON 					"res\\opengl.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "..\\res\\opengl.ico"
+IDI_MYICON 				ICON 					"..\\res\\opengl.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
